@@ -39,5 +39,3 @@ npm install vue-dock-menu
 ## Demo
 
 ![demo](./assets/demo.gif)
-
-![](2020-12-16-22-28-07.png)
