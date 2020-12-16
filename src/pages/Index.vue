@@ -6,7 +6,7 @@
         <!-- To use other icons here, you need to import them in the Shortcut component -->
         <Shortcut link="/getting-started" text="Introduction" icon="zap-icon" />
         <Shortcut link="/guide" text="Guide" icon="book-open-icon" />
-        <Shortcut link="/props" text="Settings" icon="settings-icon" />
+        <Shortcut link="/props" text="Configuration" icon="settings-icon" />
       </nav>
       <GitLink class="git" size="large" />
     </div>
