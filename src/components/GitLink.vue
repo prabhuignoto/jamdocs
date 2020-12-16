@@ -1,28 +1,40 @@
 <template>
-  <a href="https://github.com/samuelhorn/jamdocs" :class="size" title="Git-repository" aria-label="Jamdocs on Github">
-    <github-icon class="icon" />
-    {{text}}
-  </a>
+  <div  class="github-btns">  
+    <a
+      href="https://github.com/prabhuignoto/vue-dock-menu/stargazers"
+      :class="size"
+      title="Git-repository"
+      aria-label="vue-dock-menu on Github"
+    >
+      <star-icon class="icon" />
+      {{ star }}
+    </a>
+  </div>
 </template>
 
 <script>
-import { GithubIcon } from 'vue-feather-icons'
+import { GithubIcon, StarIcon } from "vue-feather-icons";
 
 export default {
   components: {
-    GithubIcon
+    GithubIcon,
+    StarIcon,
   },
   props: {
     size: {
       type: String,
-      default: 'small'
+      default: "small",
     },
     text: {
       type: String,
-      default: 'Fork me on Github'
-    }
-  }
-}
+      default: "Fork me on Github",
+    },
+    star: {
+      type: String,
+      default: "Star this project on Github",
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -34,7 +46,8 @@ a {
   font-size: 12px;
   line-height: 18px;
   font-weight: 700;
-  transition: color .15s ease-in-out, background .15s ease-in-out;
+  transition: color 0.15s ease-in-out, background 0.15s ease-in-out;
+  margin: 0.5rem 0;
 
   &:focus {
     outline: none;
@@ -69,6 +82,11 @@ a {
       }
     }
   }
+}
+
+.github-btns  {
+  display: flex;
+  flex-direction: column;
 }
 </style>
 

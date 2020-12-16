@@ -1,13 +1,13 @@
 {
-  "name": "Jamdocs",
-  "short_name": "Jamdocs",
+  "name": "vue-dock-menu",
+  "short_name": "vue-dock-menu",
   "icons": [
     {
-      "src": "logo-192.png",
-      "sizes": "192x192"
+      "src": "logo.png",
+      "sizes": "400x400"
     },
     {
-      "src": "logo-512.png",
+      "src": "logo.png",
       "sizes": "512x512"
     }
   ],

@@ -10,15 +10,29 @@
       ]
     },
     {
-      "section": "Setup",
+      "section":  "Guide",
       "topics": [
         {
-          "title": "Theme configuration",
-          "slug": "theme-configuration"
-        },
+          "title": "Guide",
+          "slug": "guide"
+        }
+      ]
+    },
+    {
+      "section":  "Configuration",
+      "topics": [
         {
-          "title": "Forestry CMS",
-          "slug": "forestry-cms"
+          "title": "Props",
+          "slug": "props"
+        }
+      ]
+    },
+    {
+      "section": "API",
+      "topics": [
+        {
+          "title": "Menu item model",
+          "slug": "menu-item-model"
         }
       ]
     }
