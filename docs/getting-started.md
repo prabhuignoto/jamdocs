@@ -9,8 +9,6 @@ slug: getting-started
 `vue-dock-menu` is a smart menubar that comes with docking super powers. The menubar can be easily docked to any four sides of the screen by drag and drop.
 The menubar also transforms into a nice sidebar while docking to the left or right side of the screen.
 
-The project was borne out of a curiosity and to bring a native menubar (aka OS) experience to the web.
-
 ## Features
 
 - 🤏&nbsp;Dock the Menubar by dragging and dropping to the edges of the screen.
