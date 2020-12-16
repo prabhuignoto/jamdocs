@@ -1,8 +1,13 @@
 <?xml version="1.0"?>
-<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
- <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+<svg width="225" height="52" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g class="layer">
+  <title>Layer 1</title>
+  <text fill="#000000" font-family="Helvetica" font-size="26" id="svg_4" stroke-width="0" text-anchor="middle" x="132.5" xml:space="preserve" y="33.90625">vue-dock-menu</text>
+  <use id="svg_7" transform="matrix(0.0779231 0 0 0.0779231 -26.8162 -18.2242)" x="398.271744" xlink:href="#svg_6" y="301.912099"/>
+  <g id="svg_8"/>
+ </g>
  <defs>
-  <symbol height="512" id="svg_2" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+  <symbol height="512" id="svg_6" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
    <g>
     <path d="m77.311,251.631l-30.036,0c0.333,41.83 11.118,81.455 32.087,117.804c16.875,29.252 40.311,56.364 69.657,80.582c49.539,40.882 106.981,61.983 106.981,61.983l10.378,-39.185l-10.378,-42.935c-25.821,-7.766 -176.747,-76.174 -178.689,-178.249z" fill="#17799c"/>
     <path d="m434.689,251.631c-1.923,104.359 -152.69,170.864 -178.689,178.249l0,82.12s55.555,-20.024 105.723,-60.463c29.721,-23.958 53.455,-51.036 70.543,-80.481c21.218,-36.561 32.129,-76.731 32.458,-119.425l-30.035,0z" fill="#12617c"/>
@@ -27,10 +32,4 @@
    </g>
   </symbol>
  </defs>
- <g class="layer">
-  <title>Layer 1</title>
-  <use id="svg_3" transform="matrix(0.108028 0 0 0.108028 71.8273 104.564)" x="620.37004" xlink:href="#svg_2" y="792.522174"/>
-  <g id="svg_4"/>
-  <text fill="#000000" font-family="Helvetica" font-size="39" id="svg_5" stroke="#000000" stroke-width="0" text-anchor="middle" x="343" xml:space="preserve" y="230">vue-dock-menu</text>
- </g>
 </svg>
