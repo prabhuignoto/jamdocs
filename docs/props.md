@@ -37,7 +37,7 @@ The below snippet disables dragging on the Menubar
 
 ## items
 
-Use the `items` prop to populate the menu.
+Use the `items` prop to populate the menu. `items` should be a collection of [MenuItem](/menu-item-model) type.
 
 ```bash
 <template>
