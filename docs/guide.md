@@ -8,42 +8,60 @@ slug: guide
 
 Use the `items` prop to create simple or nested menus of your liking.
 
-Here we create a simple menu structure with `Edit` and `Open Recent` having sub menus.
+Please refer [MenuItemModel](/menu-item-model) for a complete list of menu item properties.
 
 - To include a divider, set an empty item object with `isDivider` property set to `true`.
 - To disable an item, set `disable` to `true`.
 
-```bash
-const items = [
-  { name: "New" },
-  { isDivider: true },
-  {
-    name: "Edit",
-    menu: {
-      name: "edit-items",
-      disable:  true
-    },
-  },
-  { isDivider: true },
-  {
-    name: "Open Recent",
-    menu: {
-      name: "recent-items",
-    },
-  },
-  { isDivider: true },
-  { name: "Save", disable: true },
-  { name: "Save As..." },
-  { isDivider: true },
-  { name: "Close" },
-  { name: "Exit" },
-]
-```
+Here we create a simple menu structure with `Edit` and `Open Recent` having sub menus.
+
 
 ```bash
-  <vue-dock-menu>
-    :items="items"
-  </vue-dock-menu>
+  <template>
+    <vue-dock-menu>
+      :items="items"
+    </vue-dock-menu>
+  </template>
+
+  <script>
+    import { DockMenu } from "vue-dock-menu";
+    import "vue-dock-menu/dist/vue-dock-menu.css";
+
+    export default defineComponent({
+      name: "MenuExample",
+      components: {
+        DockMenu
+      },
+      data()  {
+        return {
+          items: [
+            { name: "New" },
+            { isDivider: true },
+            {
+              name: "Edit",
+              menu: {
+                name: "edit-items",
+                disable:  true
+              },
+            },
+            { isDivider: true },
+            {
+              name: "Open Recent",
+              menu: {
+                name: "recent-items",
+              },
+            },
+            { isDivider: true },
+            { name: "Save", disable: true },
+            { name: "Save As..." },
+            { isDivider: true },
+            { name: "Close" },
+            { name: "Exit" },
+          ]
+        }
+      }
+    })
+  </script>
 ```
 
 <br />
@@ -53,7 +71,7 @@ const items = [
 use the `theme` prop to customize the colors of the menu bar.
 
 ```bash
-  <menu-bar
+  <vue-dock-menu
     :items="items"
     :on-selected="selected"
     :theme="{
@@ -81,25 +99,27 @@ Each menu item can be iconified and the component uses slots to inject the icons
 Pass individual icons (or images) as templates marked with a unique `slot id`. please make sure the `ids` match the  `iconSlot` property in the items array.
 
 ```bash
-<vue-dock-menu
-  :items="items"
-  :on-selected="selected"
->
-  <template #file>
-    <img
-      src="../assets/file.svg"
-      alt="file"
-      :style="style"
-    >
-  </template>
-  <template #window>
-    <img
-      src="../assets/window-maximize.svg"
-      alt="file"
-      :style="style"
-    >
-  </template>
-</vue-dock-menu>
+<template>
+  <vue-dock-menu
+    :items="items"
+    :on-selected="selected"
+  >
+    <template #file>
+      <img
+        src="../assets/file.svg"
+        alt="file"
+        :style="style"
+      >
+    </template>
+    <template #window>
+      <img
+        src="../assets/window-maximize.svg"
+        alt="file"
+        :style="style"
+      >
+    </template>
+  </vue-dock-menu>
+</template>
 
 <script>
   import { DockMenu } from "vue-dock-menu";

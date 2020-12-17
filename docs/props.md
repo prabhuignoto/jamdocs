@@ -8,6 +8,8 @@ slug: props
 
 The `dock` property can be used to set the default dock position.
 
+> type: String
+
 | Allowed Positions |
 |------------------|
 | `TOP`              |
@@ -28,7 +30,9 @@ The following snippet docks the menubar to the `right`.
 
 Use this property to enable or disable dragging. Dragging is enabled by default.
 
-The below snippet disables dragging on the Menubar
+> type: Boolean
+
+The below snippet disables dragging on the Menubar.
 
 ```bash
   <vue-dock-menu :draggable="false">
@@ -38,6 +42,8 @@ The below snippet disables dragging on the Menubar
 ## items
 
 Use the `items` prop to populate the menu. `items` should be a collection of [MenuItem](/menu-item-model) type.
+
+> type: Array of [MenuItem](/menu-item-model)
 
 ```bash
 <template>
@@ -76,6 +82,11 @@ Use the `items` prop to populate the menu. `items` should be a collection of [Me
 
 Use the `on-selected` callback to fetch the selected item.
 
+The callback receives an object with `name` and `path` properties.
+
+- name - Name of the menu item.
+- path - Full path of the selected item.
+
 The callback
 
 ```bash
@@ -113,4 +124,15 @@ The callback
     }
   }
 </script>
+```
+
+### sidebarWidth
+
+> type: String
+
+Controls the width of the sidebar (when docked `LEFT` or `RIGHT`).
+
+```bash
+<vue-dock-menu :items="items" :sidebar-width="300px">
+</vue-dock-menu>
 ```

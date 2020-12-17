@@ -20,6 +20,11 @@ export default function (Vue, { router, head, isClient, appOptions }) {
     href: '/manifest.json'
   })
 
+  head.link.push({
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap",
+  });
+
   head.meta.push({
     name: 'theme-color',
     content: '#10c186'
