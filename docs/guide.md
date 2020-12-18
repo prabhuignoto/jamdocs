@@ -171,7 +171,7 @@ This works seamlessly even for `nested` menu structure. Make sure the `slot ids`
       return {
         items: [
           { name: "New File",
-          subMenu: [{ name: "New Window", iconSlot: "window" }]},
+          menu: [{ name: "New Window", iconSlot: "window" }]},
         ]
       }
     }

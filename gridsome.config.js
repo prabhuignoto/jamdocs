@@ -16,40 +16,40 @@ function addStyleResource (rule) {
 }
 
 module.exports = {
-  siteName: 'vue-dock-menu',
-  siteUrl: 'https://jamdocs.samuelhorn.com',
+  siteName: "vue-dock-menu",
+  siteUrl: "https://www.prabhumurthy.com",
   templates: {
-    Doc: '/:slug',
+    Doc: "/:slug",
   },
   plugins: [
     {
-      use: '@gridsome/source-filesystem',
+      use: "@gridsome/source-filesystem",
       options: {
-        path: 'docs/**/*.md',
-        typeName: 'Doc',
+        path: "docs/**/*.md",
+        typeName: "Doc",
         remark: {
-          plugins: [
-            '@gridsome/remark-prismjs'
-          ]
-        }
-      }
+          plugins: ["@gridsome/remark-prismjs"],
+        },
+      },
     },
     {
-      use: '@gridsome/plugin-google-analytics',
+      use: "@gridsome/plugin-google-analytics",
       options: {
-        id: (process.env.GA_ID ? process.env.GA_ID : 'XX-999999999-9')
-      }
+        id: process.env.GA_ID ? process.env.GA_ID : "256526223",
+      },
     },
     {
-      use: '@gridsome/plugin-sitemap',
+      use: "@gridsome/plugin-sitemap",
       options: {
-        cacheTime: 600000
-      }
-    }
+        cacheTime: 600000,
+      },
+    },
   ],
-  chainWebpack: config => {
-    const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
-    types.forEach(type => addStyleResource(config.module.rule('scss').oneOf(type)))
-  }
-}
+  chainWebpack: (config) => {
+    const types = ["vue-modules", "vue", "normal-modules", "normal"];
+    types.forEach((type) =>
+      addStyleResource(config.module.rule("scss").oneOf(type))
+    );
+  },
+};
 
