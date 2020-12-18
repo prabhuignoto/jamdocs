@@ -24,10 +24,8 @@ The menubar also transforms into a nice sidebar while docking to the left or rig
 
 ## Installation
 
-You can use either `npm` or `yarn` to install the package.
-
 ```sh
-yarn install vue-dock-menu
+yarn add vue-dock-menu
 ```
 
 > Or
